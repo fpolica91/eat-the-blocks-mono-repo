@@ -12,8 +12,8 @@ contract LiquityPool is LPToken {
     uint256 public constant REWARD_PER_BLOCK = 1;
 
     constructor(address _underlyingToken, address _governanceToken) {
-        underlyingToken = _underlyingToken;
-        governanceToken = _governanceToken;
+        underlyingToken = Underlyingtoken(_underlyingToken);
+        governanceToken = GovernanceToken(_governanceToken);
     }
 
     // function for the user to transfer tokens into the Liquidity pool contract

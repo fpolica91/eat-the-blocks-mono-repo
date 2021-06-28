@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {},
   "dependencies": {
-    "@openzeppelin/contracts": "^3.2.1-solc-0.7"
+    "@openzeppelin/contracts": "^3.2.1-solc-0.7",
+    "@openzeppelin/test-helpers": "^0.5.11"
   }
 }
