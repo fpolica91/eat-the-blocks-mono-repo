@@ -4,7 +4,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "./IFlashLoanUser.sol";
 
-contract FlashLoanProvider {
+contract FlashLoanProvider is ReentrancyGuard {
     mapping(address => IERC20) public tokens;
 
     constructor(address[] memory _tokens) {
@@ -23,7 +23,7 @@ contract FlashLoanProvider {
         uint256 amount,
         address _token,
         bytes memory data
-    ) external {
+    ) external nonReentrant() {
         // pointer to the token that we are lending
         IERC20 token = tokens[_token];
         // balanace of the token in the contract before lending.
