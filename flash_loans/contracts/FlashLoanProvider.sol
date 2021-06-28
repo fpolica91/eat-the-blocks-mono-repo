@@ -14,7 +14,7 @@ contract FlashLoanProvider {
     }
 
     // function to provide the loan
-    // callback -> address where to send the token
+    // callback -> address where to send the token, it does not have to be the contract that is receiving the money
     //amount -> amount of token to send
     //_token -> address of the token that we are sending
     // data -> arbitrary data that is forwarded to the borrower.
