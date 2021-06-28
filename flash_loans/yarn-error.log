@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add @oppenzeppelin/contracts@3.2.1
+
+PATH: 
+  /Users/fabriciopolicarpo/.cabal/bin:/Users/fabriciopolicarpo/.ghcup/bin:/Users/fabriciopolicarpo/anaconda3/bin:/usr/local/opt/node@12/bin:/usr/local/opt/node@12/bin:/Users/fabriciopolicarpo/.yarn/bin:/Users/fabriciopolicarpo/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/fabriciopolicarpo/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/fabriciopolicarpo/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/fabriciopolicarpo/.cabal/bin:/Users/fabriciopolicarpo/.ghcup/bin:/Users/fabriciopolicarpo/anaconda3/bin:/usr/local/opt/node@12/bin:/Users/fabriciopolicarpo/.yarn/bin:/Users/fabriciopolicarpo/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/fabriciopolicarpo/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@oppenzeppelin%2fcontracts: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "flash_loans",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
