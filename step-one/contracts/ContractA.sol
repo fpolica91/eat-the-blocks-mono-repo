@@ -25,6 +25,7 @@ contract ContractA {
             finally we call the deposit function of contract b.
          */
         token.transferFrom(msg.sender, address(this), _amount);
+        // NOTE approve takes amount address and amount
         token.approve(address(contractB), _amount);
         contractB.deposit(_amount);
     }
